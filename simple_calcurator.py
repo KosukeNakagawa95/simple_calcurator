@@ -23,4 +23,4 @@ total_seconds = time_per_unit * quantity
 total_minutes = math.ceil(total_seconds / 60)
 
 #結果を表示する
-print(f"1個当たり{time_per_unit}秒かかる工程を{quantity}個では、{integer_minutes}分が必要になります。")
+print(f"1個当たり{time_per_unit}秒かかる工程を{quantity}個では、{total_minutes}分が必要になります。")
