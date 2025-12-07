@@ -14,6 +14,6 @@ def get_valid_number(message): #get_vaild_numberを実行するときに(message
 quantity = get_valid_number("何個作りますか？") #time_per_unitを定義
 time_per_unit = get_valid_number("1個当たり何秒必要ですか？") #quantityを定義
 
-total_minutes = math.ceil((quantity * time_per_unit/ 60) #合計秒数を60で割って、計算結果の少数を切り上げ
+total_minutes = math.ceil((quantity * time_per_unit) / 60) #合計秒数を60で割って、計算結果の少数を切り上げ
 
 print(f"1個当たり{time_per_unit}秒かかる工程を{quantity}個では、{total_minutes}分が必要になります。")
